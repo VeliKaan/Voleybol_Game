@@ -120,4 +120,4 @@ Bu sayfada yer alan tüm içerikler, tanıtım ve portföy amacıyla hazırlanm�
 
 ## 📫 İletişim
 - **LinkedIn:** [linkedin.com/in/veli-kaan-akan](https://linkedin.com/in/veli-kaan-akan)  
-- **E-posta:** velika...@gmail.com
+- **E-posta:** velikaan.akan@gmail.com
