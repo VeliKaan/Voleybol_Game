@@ -62,9 +62,10 @@ Unity içindeki karakter bu hareketleri taklit eder.
 - **Engine:** Unity 6000.0.22f1 (Unity 6)
 - **Dil:** C# (Unity tarafı)
 - **Görüntü İşleme / Hareket Algılama:** Python ile gerçek zamanlı kamera verisi işlenir
+- **Hareket Tespit AI:** Yapay zeka algoritması, oyuncunun vuruş türünü (Smash, Pas, Manşet) ve yön bilgisini analiz eder
 - **Veri Akışı:**
-  1. Kamera, oyuncunun hareketlerini Python tabanlı görüntü işleme algoritması ile algılar.  
-  2. Yapay zeka modeli, vuruş türünü (`Smash`, `Pas`, `Manşet`) ve yön bilgisini analiz eder.  
+  1. Kamera, oyuncunun hareketlerini algılar.  
+  2. Hareket tespit AI, vuruş türü ve yön bilgisi çıkarır.  
   3. Bu veriler Unity’ye gönderilir.  
   4. Unity içindeki karakter, vuruşu doğru yönde gerçekleştirir.
 
@@ -84,7 +85,8 @@ Oyun geliştirme sürecinin **tamamında aktif rol aldım** ve aşağıdaki kıs
 
 - Fizik tabanlı top hareketi (parabolik uçuş ve çarpışma hesaplamaları)
 - Smash, Pas ve Manşet vuruşlarının oyun mekaniği
-- Kamera → Yapay Zeka → Unity entegrasyonunun Unity tarafı
+- **Hareket tespit AI algoritmasının geliştirilmesi** (Python ile, vuruş türü ve yön analizi)
+- Kamera → Yapay Zeka → Unity entegrasyonu
 - `Player`, `Bot` ve `Game_Manager` sınıflarının geliştirilmesi
 - Bot AI algoritması (rakibin pozisyon alması ve topa tepki vermesi)
 - Servis ve pozisyon mekaniklerinin tasarımı
