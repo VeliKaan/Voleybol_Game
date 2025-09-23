@@ -69,9 +69,9 @@ Unity içindeki karakter bu hareketleri taklit eder.
   4. Unity içindeki karakter, vuruşu doğru yönde gerçekleştirir.
 
 - **Ana Mimariler:**
-  - `Player_New` → Oyuncunun vuruşları ve pozisyon kontrolü
-  - `Bot_New` → Rakip yapay zekâ kontrolü
-  - `Game_Manager_New` → Maç yönetimi, skor sistemi
+  - `Player` → Oyuncunun vuruşları ve pozisyon kontrolü
+  - `Bot` → Rakip yapay zekâ kontrolü
+  - `Game_Manager` → Maç yönetimi, skor sistemi
   - `BallController` → Top fiziği ve hareketlerinin merkezi kontrolü
 
 > Kodlar gizli tutulmaktadır.  
@@ -85,7 +85,7 @@ Oyun geliştirme sürecinin **tamamında aktif rol aldım** ve aşağıdaki kıs
 - Fizik tabanlı top hareketi (parabolik uçuş ve çarpışma hesaplamaları)
 - Smash, Pas ve Manşet vuruşlarının oyun mekaniği
 - Kamera → Yapay Zeka → Unity entegrasyonunun Unity tarafı
-- `Player_New`, `Bot_New` ve `Game_Manager_New` sınıflarının geliştirilmesi
+- `Player`, `Bot` ve `Game_Manager` sınıflarının geliştirilmesi
 - Bot AI algoritması (rakibin pozisyon alması ve topa tepki vermesi)
 - Servis ve pozisyon mekaniklerinin tasarımı
 - Genel oyun optimizasyonu ve hata ayıklama
@@ -98,13 +98,14 @@ Oyun geliştirme sürecinin **tamamında aktif rol aldım** ve aşağıdaki kıs
 > Görseller demo veriler ile hazırlanmıştır.
 
 **Ana Menü**  
-![Menu](./screenshots/menu.png)
+![Menu](./screenshots/Voleybol_Menu.png)
 
-**Maç İçi Oynanış (Smash Vuruşu)**  
-![Gameplay](./screenshots/gameplay.gif)
+**Maç İçi Oynanış (Manşet Vuruşu)**  
+![Gameplay](./screenshots/Voleybol_Oyun_İçi_1.png)
+![Gameplay](./screenshots/Voleybol_Oyun_İçi_2.png)
 
-**Skor Ekranı**  
-![Score](./screenshots/score-screen.png)
+**Oynayış Hareket Tesbiti**  
+![AI](./screenshots/Voleybol_ManşetSol.png)
 
 ---
 
