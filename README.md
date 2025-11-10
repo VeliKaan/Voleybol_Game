@@ -58,16 +58,40 @@ Unity içindeki karakter bu hareketleri taklit eder.
 
 ---
 
-## 🛠 Teknik Bilgiler
-- **Engine:** Unity 6000.0.22f1 (Unity 6)
-- **Dil:** C# (Unity tarafı)
-- **Görüntü İşleme / Hareket Algılama:** Python ile gerçek zamanlı kamera verisi işlenir
-- **Hareket Tespit AI:** Yapay zeka algoritması, oyuncunun vuruş türünü (Smash, Pas, Manşet) ve yön bilgisini analiz eder
-- **Veri Akışı:**
-  1. Kamera, oyuncunun hareketlerini algılar.  
-  2. Hareket tespit AI, vuruş türü ve yön bilgisi çıkarır.  
-  3. Bu veriler Unity’ye gönderilir.  
-  4. Unity içindeki karakter, vuruşu doğru yönde gerçekleştirir.
+## 🛠 Teknik Bilgiler ve Kullanılan Teknolojiler
+
+### Unity ve Oyun Geliştirme
+- **Engine:** Unity 6000.0.22f1  
+- **Dil:** C# (Unity tarafı)  
+- Fizik tabanlı top hareketi ve oyun mekaniği  
+- `Player`, `Bot`, `Game_Manager`, `BallController` sınıfları  
+- Top çarpışma ve pozisyon mekanikleri  
+- Bot AI algoritması  
+
+### Görüntü İşleme / Hareket Algılama
+- **Python** – Kamera verilerini işlemek ve AI modelini çalıştırmak için  
+- **OpenCV (cv2)** – Video çekimi ve frame işleme  
+- **Mediapipe** – İnsan vücut poz noktalarının (keypoints) çıkarılması  
+
+### Yapay Zeka ve Modelleme
+- **PyTorch** – LSTM modeli ile hareket türü ve yön tahmini  
+- **CustomLSTMModel2** – Çok katmanlı, bidirectional LSTM modeli  
+- **nn.LSTM, nn.Linear, nn.Dropout, nn.LayerNorm** – Model mimarisi ve regularization  
+- **nn.CrossEntropyLoss** – Çok sınıflı sınıflandırma  
+- **torch.optim.Adadelta** – Model optimizasyonu  
+- GPU / CUDA desteği  
+
+### Veri İşleme ve Yönetim
+- **JSON** – Dataset ve keypoint verilerini kaydetmek  
+- **YAML** – Model ve eğitim parametrelerini yönetmek  
+- **os** – Dosya ve klasör yönetimi  
+- **NumPy** – Tensör ve matematiksel işlemler  
+
+### Eğitim ve Deney Takibi
+- **MLflow** – Eğitim süreci ve metrik takibi  
+- **Matplotlib** – Eğitim/doğrulama grafikleri ve confusion matrix  
+- **scikit-learn** – train_test_split ve confusion matrix hesaplama  
+- **tqdm** – Video işleme ilerlemesini takip etmek  
 
 - **Ana Mimariler:**
   - `Player` → Oyuncunun vuruşları ve pozisyon kontrolü
