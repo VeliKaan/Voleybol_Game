@@ -75,7 +75,6 @@ Unity içindeki karakter bu hareketleri taklit eder.
 
 ### Yapay Zeka ve Modelleme
 - **PyTorch** – LSTM modeli ile hareket türü ve yön tahmini  
-- **CustomLSTMModel2** – Çok katmanlı, bidirectional LSTM modeli  
 - **nn.LSTM, nn.Linear, nn.Dropout, nn.LayerNorm** – Model mimarisi ve regularization  
 - **nn.CrossEntropyLoss** – Çok sınıflı sınıflandırma  
 - **torch.optim.Adadelta** – Model optimizasyonu  
